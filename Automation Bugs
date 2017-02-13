@@ -1,0 +1,95 @@
+Automation
+
+For reference Severities and priorities:
+            1. Low
+            2. Medium
+            3. High
+            4. Critical
+
+* 4 Bugs:
+
+a)
+ Title: User cannot update image
+
+ Steps to reproduce
+
+ 1. Open the application
+ 2. Notice the list of items
+ 3. Pick an item and click on its corresponding edit button
+ 4. Notice the item's information is displayed in the Item Details section
+ 5. Click on browse button and select a new image of the correct dimensions (maximum of 320px x 320px)
+ 6. Type a new description in the text area of the correct length (maximum of 300 chars)
+ 7. Click on update button
+ 8. Notice the item's description has been updated correctly
+ 9. Notice the item's image has not been updated
+
+ Expected behavior: The image should be updated
+
+ Severity: High
+ Priority: High
+
+ Screenshot not needed
+
+
+b)
+ Title: Delete confirmation dialog has wording errors
+
+ Steps to reproduce
+
+ 1. Open the application
+ 2. Notice the list of items
+ 3. Pick an item and click on its corresponding delete button
+ 4. Notice a confirmation dialog shows up
+ 5. Notice the dialog message has wording errors
+
+ Expected behavior: The message should read: "Are you sure you want to delete this item?"
+
+ Severity: Low
+ Priority: High
+
+ Screenshot not needed
+
+
+c)
+ Title: File input alerts are not displayed
+
+ Steps to reproduce
+
+ 1. Open the application
+ 2. Notice the form section called Item Details
+ 3. Notice no alerts are being displayed
+
+ Expected behavior: Three alerts should be displayed (*required, *max width: 320px, *max height: 320px)
+
+ Severity: Low
+ Priority: Low
+
+ Screenshot not needed
+
+
+d)
+ Title: Updating a deleted item breaks the system
+
+ Steps to reproduce
+
+ 1. Open the application
+ 2. Notice the list of items
+ 3. Pick an item and click on its corresponding edit button
+ 4. Notice the item's information is displayed in the Item Details section
+ 5. Notice the update button is enabled
+ 6. Notice the list of items
+ 7. Pick an item and click on its corresponding delete button
+ 8. Notice a confirmation dialog shows up
+ 9. Click on the Yes button
+ 10. Notice the information of the deleted item still remains in the form
+ 11. Click the still enabled update button
+ 12. Refresh the page
+ 13. Notice all the items have been reset
+ 14. Notice that if you repeat all the steps (1-13), the application will not load any more.
+
+ Expected behavior: User should not be able to press the update button of a deleted item
+
+ Severity: Critical
+ Priority: Critical
+
+ Screenshot: A screenshot of the 503 error page which is a file uploaded with the exercise called 503.png

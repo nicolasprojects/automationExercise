@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AutomationExercise" verbose="2">
+  <test name="AutomationExercise">
+    <classes>
+      <class name="com.automation.App">
+        <!-- If you want to execute one test, use the method name like this:
+        <methods>
+          <include name="verifyListCount" />
+        </methods>
+         -->
+      </class>
+    </classes>
+  </test>
+</suite>
+
+

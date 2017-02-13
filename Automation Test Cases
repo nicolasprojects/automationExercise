@@ -1,0 +1,68 @@
+Automation
+
+* Create 7 test cases:
+
+a) Verify list count
+
+ 1. Open the application
+ 2. Notice the header contains a string with the number of items in the list
+ 3. Count the list items
+ 4. Both counts should match: Header's count and actual list size.
+
+b) Add item
+
+ 1. Open the application
+ 2. Notice the form section called Item Details
+ 3. Click on browse button and select an image of the specified dimensions (maximum of 320px x 320px)
+ 4. Type a description in the text area of the specified length (maximum of 300 chars)
+ 5. Click on create button
+ 6. The new item should be added at the end of the list
+ 7. The items count should be updated in the header
+
+c) Add item with larger image
+
+ 1. Open the application
+ 2. Notice the form section called Item Details
+ 3. Click on browse button and select an image of dimensions bigger than specified (eg. 400px x 400px)
+ 4. Type a description in the text area of the specified length (maximum of 300 chars)
+ 5. Click on create button
+ 6. Notice the new item has not been added
+
+d) Add item with lengthier description
+
+ 1. Open the application
+ 2. Notice the form section called Item Details
+ 3. Click on browse button and select an image of the specified dimensions (maximum of 320px x 320px)
+ 4. Type a description in the text area lengthier than specified (eg. 301 chars)
+ 5. Click on create button
+ 6. Notice the new item has not been added
+
+e) Add item without picture
+
+ 1. Open the application
+ 2. Notice the form section called Item Details
+ 3. Type a description in the text area of the specified length (maximum of 300 chars)
+ 4. Click on create button
+ 5. Notice an alert shows up
+ 6. Alert should contain this message: "You must to select an image"
+
+f) Delete item
+
+ 1. Open the application
+ 2. Notice the list of items
+ 3. Pick an item and click on its corresponding delete button
+ 4. Notice a confirmation dialog shows up
+ 5. Click on the Yes button
+ 6. Notice the element is not visible in the list
+ 7. Notice the header's count has been adjusted
+
+g) Drag and drop
+
+ 1. Open the application
+ 2. Notice the list of items
+ 3. Pick an item and click and hold
+ 4. Drag the item into another item's slot and release the click
+ 5. Notice the items order changed accordingly (ie. the dragged element now occupies the new slot while the subsequent elements are offset one step)
+
+
+
